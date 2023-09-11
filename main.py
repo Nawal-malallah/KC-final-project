@@ -25,24 +25,25 @@ def gpa():
         return "your GPA is 0.0"
     else:
         return "something went wrong try again"
+    
+print(gpa())
 
 #preferance 
-def S_L():
-    SL = input("please choose the sciences or the arts  ")
+# def S_L():
+#     SL = input("please choose the sciences or the arts  ")
 
-    if SL == "the sciences" or SL == "sciences":
-        return "go here"
-    elif SL == "the art" or SL == "art":
-        return "go here"
-    else:
-        return "something went wrong try"
+#     if SL == "the sciences" or SL == "sciences":
+#         return "go here"
+#     elif SL == "the art" or SL == "art":
+#         return "go here"
+#     else:
+#         return "something went wrong try"
     
     #EDIT PLSSSS ^^^^
 
 
-
-
-
 # options
+
+
 
 #output
