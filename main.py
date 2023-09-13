@@ -5,7 +5,13 @@ def calculate_gpa():
     grades = [float(grade.strip()) for grade in grades]
 
     if GPA_type.get() == "Weighted":
-        weights = [float(weight.strip()) for weight in entry_weights.get().split(",")]
+        weights = entry_weights.get().split(",")
+        weights = [float(weight.strip()) for weight in weights]
+
+        # Print the lengths for debugging
+        print(len(grades))
+        print(len(weights))
+
         total_weighted_points = sum(grades[i] * weights[i] for i in range(len(grades)))
         total_weight = sum(weights)
         gpa = total_weighted_points / total_weight
@@ -46,4 +52,5 @@ calculate_button.pack()
 result_label.pack()
 
 root.mainloop()
+
 
